@@ -1,0 +1,39 @@
+.home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home .pic img {
+    height: auto;
+     /* Make it responsive */
+     width: 1200px; /* Keep the max width for larger screens */
+}
+
+.home h1 {
+    color: rgb(10, 12, 120);
+    text-align: center; /* Ensure proper alignment on smaller screens */
+}
+
+.home h2 {
+    color: rgb(104, 99, 99);
+    text-align: center; /* Ensure proper alignment on smaller screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home .pic img {
+        width: 100%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 1.5rem; /* Adjust font size for extra small screens */
+    }
+    .home h2 {
+        font-size: 1.2rem; /* Adjust font size for extra small screens */
+    }
+}

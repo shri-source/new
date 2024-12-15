@@ -1,0 +1,60 @@
+.footer {
+    margin-top: 100px;
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+}
+
+.footer p {
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px; /* Reduced margin for better responsiveness */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 10px; /* Add spacing between items for better appearance */
+}
+
+.links a {
+    color: rgb(4, 4, 81);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer hr {
+    margin: 30px auto; /* Center the line dynamically */
+    width: 80%; /* Adjust width for responsiveness */
+}
+
+.footerbottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    gap: 10px; /* Add spacing between items */
+}
+
+.footerbottom a {
+    text-decoration: none;
+    color: rgb(4, 4, 81);
+    font-size: 1rem; /* Ensure font size is readable on all screen sizes */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Increase gap for stacked items */
+    }
+
+    .footer hr {
+        width: 90%; /* Make the horizontal line adapt to smaller screens */
+    }
+
+    .footerbottom {
+        flex-direction: column;
+        gap: 10px; /* Add spacing for stacked items */
+    }
+}

@@ -1,0 +1,91 @@
+.about {
+    margin-top: 20px;
+}
+
+.aboutmain {
+    display: flex;
+     /* Allows items to wrap on smaller screens */
+    justify-content: space-around; /* Centers the content */
+    align-items: center; /* Vertically centers content */
+}
+
+.aboutmain .aboutright img {
+    height: 500px;
+    width: 500px; /* Responsive width */
+    max-width: 600px; /* Maintain max width for larger screens */
+    border-radius: 40px 0px 0px 0px;
+    
+}
+
+.aboutleft {
+    margin: 20px; /* Reduce margin for better fit on smaller screens */
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center; /* Center-align content for smaller screens */
+    width: 500px;
+}
+
+.aboutleft h1 {
+    margin: 40px 0px; /* Adjust margin for smaller screens */
+    color: #252579;
+    font-weight: bold;
+    font-size: 28px; /* Adjust font size for responsiveness */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.below {
+    background-color: #000945;
+    height: auto; /* Allows height to adjust based on content */
+    width: 100%;
+}
+
+.content {
+    color: white;
+    padding: 20px; /* Reduce padding for smaller screens */
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center; /* Center-align content for smaller screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        margin-top: 30px;
+    }
+    .aboutmain {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .aboutmain .aboutright img {
+        max-width: 90%; /* Reduce image size for tablets */
+    }
+
+    .aboutleft h1 {
+        font-size: 24px; /* Smaller font size for tablets */
+    }
+
+    .content {
+        padding: 30px; /* Adjust padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        margin-top: 30px;
+    }
+    .aboutmain .aboutright img {
+        max-width: 100%; /* Full width image for mobiles */
+    }
+
+    .aboutleft {
+        margin: 10px; /* Minimized margin for mobile devices */
+    }
+
+    .aboutleft h1 {
+        font-size: 20px; /* Even smaller font size for mobile */
+    }
+
+    .content {
+        padding: 20px; /* Further reduce padding for mobile */
+    }
+}
